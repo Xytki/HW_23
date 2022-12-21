@@ -2,7 +2,7 @@ version: '3.3'
 
 services:
   app:
-    image: xytki/sky_pro:tagname
+    image: xytki/sky_pro:$GITHUB_REF_NAME-$GITHUB_RUN_ID
     ports:
       - 8080:25000
     environment:
